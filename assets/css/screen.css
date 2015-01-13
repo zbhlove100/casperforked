@@ -3,7 +3,6 @@
    ========================================================================== */
 
 /*
-
     0.  Normalize
     1.  Icons
     2.  General
@@ -17,7 +16,6 @@
     10. Media Queries (Tablet)
     11. Media Queries (Mobile)
     12. Animations
-
 */
 
 /* ==========================================================================
@@ -176,10 +174,10 @@ html {
 body {
     height: 100%;
     max-height: 100%;
-    font-family: "Merriweather", serif;
+    font-family: "Arial", Arial;
     letter-spacing: 0.01rem;
-    font-size: 1.8rem;
-    line-height: 1.75em;
+    font-size: 1.5rem;
+    line-height: 1.5em;
     color: #3A4145;
     -webkit-font-feature-settings: 'kern' 1;
     -moz-font-feature-settings: 'kern' 1;
@@ -666,7 +664,7 @@ margin on the iframe, cause it breaks stuff. */
     letter-spacing: -1px;
     font-weight: 700;
     font-family: "Open Sans", sans-serif;
-    color: #fff;
+    color: #282828;
 }
 
 .page-description {
@@ -676,7 +674,7 @@ margin on the iframe, cause it breaks stuff. */
     font-weight: 400;
     font-family: "Merriweather", serif;
     letter-spacing: 0.01rem;
-    color: rgba(255,255,255,0.8);
+    color: rgba(40,40,40,0.8);
 }
 
 .no-cover.main-header {
@@ -938,7 +936,7 @@ body:not(.post-template) .post-title {
 
 /* Create some space to the right for the share links */
 .post-footer .author {
-    margin-right: 180px;
+    margin-right: 220px;
 }
 
 .post-footer h4 a {
@@ -973,6 +971,12 @@ body:not(.post-template) .post-title {
     color: #50585D;
 }
 
+.post-footer .sharejia {
+    position: absolute;
+    top: 6rem;
+    right: 0;
+    width: 180px;
+}
 /* The subscribe icon on the footer */
 .subscribe {
     width: 28px;
@@ -1198,10 +1202,6 @@ body:not(.post-template) .post-title {
     font-size: 1.1rem;
 }
 
-/* Pastebin */
-.content .embedPastebin {
-    margin-bottom: 1.75em;
-}
 
 /* ==========================================================================
    8. Pagination - Tools to let you flick between pages
@@ -1294,7 +1294,6 @@ body:not(.post-template) .post-title {
 /* ==========================================================================
    9. Footer - The bottom of every page
    ========================================================================== */
-
 .site-footer {
     position: relative;
     margin: 8rem 0 0 0;
@@ -1303,11 +1302,12 @@ body:not(.post-template) .post-title {
     font-family: "Open Sans", sans-serif;
     font-size: 1rem;
     line-height: 1.75em;
-    color: #BBC7CC;
+    background: #2f1700;
+    color: #fff;
 }
 
 .site-footer a {
-    color: #BBC7CC;
+    color: #ca6400;
     text-decoration: none;
     font-weight: bold;
 }
@@ -1326,6 +1326,7 @@ body:not(.post-template) .post-title {
 .copyright {
     display: block;
     width: 45%;
+    text-align:left;
     float: left;
 }
 
@@ -1335,7 +1336,18 @@ body:not(.post-template) .post-title {
    ========================================================================== */
 
 @media only screen and (max-width: 900px) {
-
+    .page-wrapper {
+        padding: 8% 11%;
+        margin: 16px auto;
+    }
+    .page-wrapper .content-side{
+        width: 100%;
+        float: none;
+    }
+    .page-wrapper .sidebar-side{
+        width: 100%;
+        float: none;
+    }
     .main-nav {
         padding: 15px;
     }
@@ -1460,6 +1472,18 @@ body:not(.post-template) .post-title {
 
 @media only screen and (max-width: 500px) {
 
+    .page-wrapper {
+        padding: 6% 9%;
+        margin: 16px auto;
+    }
+    .page-wrapper .content-side{
+        width: 100%;
+        float: none;
+    }
+    .page-wrapper .sidebar-side{
+        width: 100%;
+        float: none;
+    }
     .main-header {
         margin-bottom: 15px;
         height: 40%;
@@ -1663,6 +1687,11 @@ body:not(.post-template) .post-title {
 
     .post-footer .share a {
         margin: 1.4rem 0.8rem 0 0.8rem;
+    }
+
+    .post-footer .sharejia {
+        position: static;
+        width: auto;
     }
 
     .author-meta li {
