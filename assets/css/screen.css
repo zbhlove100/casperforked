@@ -1846,6 +1846,7 @@ body:not(.post-template) .post-title {
     border-radius: 3px;
     background: rgba(0,0,0,0.1);
     transition: all ease 0.3s;
+    margin: 0 5px;
 }
 .login-button:before {
     font-size: 9px;
