@@ -1852,3 +1852,6 @@ body:not(.post-template) .post-title {
     font-size: 9px;
     margin-right: 6px;
 }
+.main-nav.overlay .login-button {
+    border-color: rgba(255,255,255,0.6);
+}
