@@ -187,9 +187,9 @@ body {
     max-height: 100%;
     font-family: "Merriweather", serif;
     letter-spacing: 0.01rem;
-    font-size: 1.8rem;
-    line-height: 1.75em;
-    color: #3A4145;
+    font-size: 1.5rem;
+    line-height: 1.5em;
+    color: #282828;
     -webkit-font-feature-settings: 'kern' 1;
     -moz-font-feature-settings: 'kern' 1;
     -o-font-feature-settings: 'kern' 1;
@@ -871,7 +871,7 @@ body.nav-opened .nav {
     letter-spacing: -1px;
     font-weight: 700;
     font-family: "Open Sans", sans-serif;
-    color: #fff;
+    color: #282828;
 }
 
 .page-description {
@@ -881,7 +881,7 @@ body.nav-opened .nav {
     font-weight: 400;
     font-family: "Merriweather", serif;
     letter-spacing: 0.01rem;
-    color: rgba(255,255,255,0.8);
+    color: rgba(40,40,40,0.8);
 }
 
 .no-cover.main-header {
@@ -1155,7 +1155,7 @@ body:not(.post-template) .post-title {
 
 /* Create some space to the right for the share links */
 .post-footer .author {
-    margin-right: 180px;
+    margin-right: 220px;
 }
 
 .post-footer h4 a {
@@ -1571,11 +1571,12 @@ body:not(.post-template) .post-title {
     font-family: "Open Sans", sans-serif;
     font-size: 1rem;
     line-height: 1.75em;
-    color: #BBC7CC;
+    background: #2f1700;
+    color: #fff;
 }
 
 .site-footer a {
-    color: #BBC7CC;
+    color: #ca6400;
     text-decoration: none;
     font-weight: bold;
 }
